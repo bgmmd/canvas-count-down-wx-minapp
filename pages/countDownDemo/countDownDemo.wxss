@@ -1,0 +1,20 @@
+/* pages/countDownDemo/countDownDemo.wxss */
+
+.container{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.count-down-wrapper{
+  background-color: red;
+}
+.cout-end-notice{
+  height: 100rpx;
+}
+.btns{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}

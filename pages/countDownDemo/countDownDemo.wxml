@@ -1,0 +1,18 @@
+<!--pages/countDownDemo/countDownDemo.wxml-->
+<view class="container">
+  <text>countDownDemo演示</text>
+  <view class="count-down-wrapper">
+    <count-down id="count-demo" fontColor="#fff" fontSize="20" total="15" width="200rpx" height="200rpx" bind:countEnd="countOver" bind:countPause="countStopCallback" bind:countReset="countResetCallback" />
+  </view>
+  <view wx:if="{{isEnd}}" class="cout-end-notice">
+    <text>倒计时结束了</text>
+  </view>
+  <view wx:else class="cout-end-notice">
+  
+  </view>
+  <view class="btns">
+    <button bind:tap="beginCount" style="width: 30%;">开始</button>
+    <button bind:tap="stopCount" style="width: 30%;">暂停</button>
+    <button bind:tap="resetCount" style="width: 30%;">重置</button>
+  </view>
+</view>
